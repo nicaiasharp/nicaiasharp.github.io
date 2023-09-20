@@ -1,0 +1,48 @@
+.container {
+    margin: 20px 50px;
+    border: 1px solid black;
+    padding: 100px;
+    background-color: white;
+}
+
+body{
+    background-image: url("images/background.avif")
+}
+
+.nav {
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+    background-color: rgb(164, 217, 255);
+}
+
+.nav li {
+    float: left;
+}
+
+.nav li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: large;
+}
+
+.nav li a:hover {
+    background-color: rgb(233, 158, 213);
+}
+
+.active-navpage {
+    background-color: lightskyblue;
+}
+
+.title {
+    text-align: center;
+    font-size: 50px;
+}
+
+.subheading {
+    font-size: 30px;
+}
+
