@@ -27,6 +27,7 @@ body{
     padding: 14px 16px;
     text-decoration: none;
     font-size: large;
+    color: black;
 }
 
 .nav li a:hover {
