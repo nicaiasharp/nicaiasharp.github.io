@@ -14,7 +14,7 @@ body{
     margin: 0%;
     padding: 0%;
     overflow: hidden;
-    background-color: rgb(164, 217, 255);
+    background-color: rgb(255, 164, 228);
 }
 
 .nav li {
@@ -30,11 +30,11 @@ body{
 }
 
 .nav li a:hover {
-    background-color: rgb(233, 158, 213);
+    background-color: rgb(232, 71, 189);
 }
 
 .active-navpage {
-    background-color: lightskyblue;
+    background-color: rgb(254, 115, 233);
 }
 
 .title {
