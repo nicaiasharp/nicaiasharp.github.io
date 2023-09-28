@@ -47,3 +47,27 @@ body{
     font-size: 30px;
 }
 
+.roman {
+    font-family: "miller-text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.italic {
+    font-family: "miller-text", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.bold {
+    font-family: "miller-text", serif;
+font-weight: 700;
+font-style: normal;
+}
+
+.bold-italic {
+    font-family: "miller-text", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
