@@ -24,8 +24,12 @@
 .active-navpage {
     background-color: rgb(106, 97, 78);
 }
+.navmenu {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+}
 .footer {
-    position: sticky;
+    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -35,3 +39,17 @@
     padding: 5px;
     font-size: 18px;
   }
+.grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+    overflow: auto;
+  }
+body{
+    background-color: rgb(57, 52, 36);
+  }
+.grid-item {
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+}
