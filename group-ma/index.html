@@ -6,19 +6,38 @@
     <title>Home</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
-        
+        .grooming {
+            grid-column: 1;
+            grid-row: 3;
+        }
+        .name {
+            grid-row: 2;
+            grid-column: 1 / span 3;
+        }
     </style>
 </head>
 <body>
-    <ul class="nav">
-        <li><a class="active-navpage" href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Schedule an Appointment</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="review.html">Reviews</a></li>
-        <li><a href="staff.html">Staff</a></li>
-        <li><a href="policies.html">Policies</a></li>
-    </ul>
+    <h1 style="text-align: center;">Pup Parlor</h1>
+    <div class="grid-container">
+        <div class="grid-item navmenu">
+            <ul class="nav">
+                <li><a class="active-navpage" href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Schedule an Appointment</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="review.html">Reviews</a></li>
+                <li><a href="staff.html">Staff</a></li>
+                <li><a href="policies.html">Policies</a></li>
+            </ul>
+        </div>
+        <div class="grid-item name">
+            <h2>Pup Parlor</h2>
+        </div>
+        <div class="grid-item grooming">
+            <h3>Grooming</h3>
+        </div>
+
+    </div>
     <p class="footer" style="border: 3px solid rgb(57, 52, 36);">Made by Nicaia Sharp</p>
 
 </body>
