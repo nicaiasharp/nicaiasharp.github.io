@@ -5,22 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/oxu6wyu.css">
     <style>
         .grooming {
             grid-column: 1;
-            grid-row: 3;
+            grid-row: 3 / span 2;
         }
         .name {
             grid-row: 2;
             grid-column: 1 / span 3;
         }
+        .schedule {
+            grid-column: 3;
+            grid-row: 3 / span 2;
+        }
     </style>
 </head>
-<body>
-    <h1 style="text-align: center;">Pup Parlor</h1>
+<body class="reg">
+    <h1 style="text-align: center; font-size: 50px;" class="bold">Pup Parlor</h1>
     <div class="grid-container">
         <div class="grid-item navmenu">
-            <ul class="nav">
+            <ul class="nav bold">
                 <li><a class="active-navpage" href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="contact.html">Schedule an Appointment</a></li>
@@ -36,9 +41,26 @@
         <div class="grid-item grooming">
             <h3>Grooming</h3>
         </div>
-
+        <div class="reg grid-item schedule">
+            <table style="margin: auto;">
+                <tr class="bold" style="font-size: 50px;">
+                    Operating Hours
+                </tr>
+                <tr>
+                    <td style="height: 50px;" >Monday-Friday</td>
+                    <td style="font-size: 20px; text-align: right; height: 100px;">11 AM-7 PM</td>
+                </tr>
+                <tr>
+                    <td style="height: 50px;">Saturday</td>
+                    <td style="font-size: 20px; text-align: right; height: 100px;">11 AM-3 PM</td>
+                </tr>
+                <tr>
+                    <td style="height: 50px;">Sunday</td>
+                    <td style="font-size: 20px; text-align: right; height: 100px;">Closed</td>
+                </tr>
+            </table>
+        </div>
     </div>
     <p class="footer" style="border: 3px solid rgb(57, 52, 36);">Made by Nicaia Sharp</p>
-
 </body>
 </html>

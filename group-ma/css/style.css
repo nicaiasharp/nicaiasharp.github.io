@@ -3,7 +3,7 @@
     margin: 0%;
     padding: 0%;
     overflow: hidden;
-    background-color: rgb(131, 121, 94);
+    background-color: rgb(0, 159, 253);
 }
 
 .nav li {
@@ -36,7 +36,7 @@
     background-color: rgb(131, 121, 94);
     color: black;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
     font-size: 18px;
   }
 .grid-container {
@@ -44,12 +44,35 @@
     grid-template-columns: auto;
     grid-gap: 10px;
     overflow: auto;
+    background-color: rgb(247, 243, 227);
+    margin: 50px;
   }
 body{
-    background-color: rgb(57, 52, 36);
+    background-color: rgb(40, 25, 14);
   }
 .grid-item {
     text-align: center;
     font-size: 30px;
     padding: 20px;
+}
+/*fonts*/
+.reg {
+    font-family: "roca", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.bold {
+    font-family: "roca", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.italic {
+    font-family: "roca", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+.bolditalic {
+    font-family: "roca", sans-serif;
+    font-weight: 700;
+    font-style: italic;
 }
