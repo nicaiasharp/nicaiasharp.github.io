@@ -19,10 +19,34 @@
             grid-column: 3;
             grid-row: 3 / span 2;
         }
+        .day {
+            text-align: left;
+            font-size: 30px;
+        }
+        .time {
+            font-size: 25px; 
+            text-align: right; 
+            height: 100px;
+        }
+        .button {
+            transition-duration: 0.4s;
+            text-decoration: none;
+            padding: 20px;
+            color: rgb(40, 25, 14);
+            border: 2px solid rgb(40, 25, 14);
+        }
+        .button:hover {
+            background-color: rgb(40, 25, 14);
+            color: rgb(247, 243, 227);
+        }
+        .video {
+            grid-column: 1;
+            grid-row: 5;
+        }
     </style>
 </head>
 <body class="reg">
-    <h1 style="text-align: center; font-size: 50px;" class="bold">Pup Parlor</h1>
+    <h1 style="text-align: center; font-size: 55px; -webkit-text-stroke-color: rgb(247, 243, 227); -webkit-text-stroke-width: 1px;" class="bold">Pup Parlor</h1>
     <div class="grid-container">
         <div class="grid-item navmenu">
             <ul class="nav bold">
@@ -35,32 +59,35 @@
                 <li><a href="policies.html">Policies</a></li>
             </ul>
         </div>
-        <div class="grid-item name">
+        <div class="grid-item name bold">
             <h2>Pup Parlor</h2>
         </div>
         <div class="grid-item grooming">
-            <h3>Grooming</h3>
+            <h3 class="bold" style="font-size: 40px;">Grooming</h3>
+            <p>Pup Parlor is deticated to providing you and your pup the most luxurious grooming experience possible. </p>
+            <a href="contact.html" class="button">Schedule an Appointment</a>
         </div>
-        <div class="reg grid-item schedule">
-            <table style="margin: auto;padding: 5px;">
-                <tr class="bold" style="font-size: 50px;">
-                    Operating Hours
+        <div class="grid-item schedule">
+            <p class="bold" style="font-size: 35px;">Operating Hours</p>
+            <table style="padding: 20px; border: 2px solid rgb(40, 25, 14); box-shadow: 8px 8px 12px rgb(40, 25, 14); border-spacing: 20px 5px;">
+                <tr>
+                    <td class="day">Monday-Friday</td>
+                    <td class="time">11 AM-7 PM</td>
                 </tr>
                 <tr>
-                    <td style="height: 50px; text-align: left;" >Monday-Friday</td>
-                    <td style="font-size: 20px; text-align: right; height: 100px;">11 AM-7 PM</td>
+                    <td class="day">Saturday</td>
+                    <td class="time">11 AM-3 PM</td>
                 </tr>
                 <tr>
-                    <td style="height: 50px; text-align: left;">Saturday</td>
-                    <td style="font-size: 20px; text-align: right; height: 100px;">11 AM-3 PM</td>
-                </tr>
-                <tr>
-                    <td style="height: 50px; text-align: left;">Sunday</td>
-                    <td style="font-size: 20px; text-align: right; height: 100px;">Closed</td>
+                    <td class="day">Sunday</td>
+                    <td class="time">Closed</td>
                 </tr>
             </table>
         </div>
+        <div class="grid-item video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/v-SfzICpfWg?si=P2K7QPOVuror0_JQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
     </div>
-    <p class="footer" style="border: 3px solid rgb(57, 52, 36);">Made by Nicaia Sharp</p>
+    <p class="footer" style="border: 3px solid black;">Made by Nicaia Sharp</p>
 </body>
 </html>
