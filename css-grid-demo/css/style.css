@@ -60,7 +60,6 @@
     font-size: 30px;
     padding: 20px;
 }
-/*this goes on the very top of the grid*/
 .navmenu {
     grid-column: 1 / span 3;
     grid-row: 1;
