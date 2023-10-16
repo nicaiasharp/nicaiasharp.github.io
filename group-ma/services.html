@@ -8,11 +8,68 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <style>
-    body{
-    background-color: bisque;
-    }
-    </style>
+.image-outline{
+    border: 2px solid black;
+}
+.image1{
+    grid-column: 1;
+    grid-row: 3;
+    width: 800px; 
+    height: 600px;
+}
+.text1{
+    grid-column: 2;
+    grid-row: 3;
+}
+.image2{
+    grid-column: 1;
+    grid-row: 4;
+    width: 800px; 
+    height: 600px;
+}
+.text2{
+    grid-column: 2;
+    grid-row: 4;
+}
+.container-grid {
+    display: grid;
+    grid-template-columns: 50%, 50%;
+    grid-gap: 10px;
+}
+.image3{
+    grid-column: 1;
+    grid-row: 5;
+    width: 800px; 
+    height: 600px
+}
+.text3{
+    grid-column: 2;
+    grid-row: 5;
+}
+.image4{
+    grid-column: 1;
+    grid-row: 6;
+    width: 800px; 
+    height: 600px
+}
+.text4{
+    grid-column: 2;
+    grid-row: 6;
+}
+.h1{
+    grid-column: 2 span/3;
+    grid-row: 2;
+    text-align: center;
+}
+.h1font{
+    font-family: "aptly", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+</style>
 <body>
+<div class="container-grid grid-container">
+    <div class="navmenu">
     <ul class="nav">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
@@ -22,9 +79,17 @@
         <li><a href="staff.html">Staff</a></li>
         <li><a href="policies.html">Policies</a></li>
     </ul>
-<h1 style="text-align: center;">Services</h1>
-<h2 style="text-align: center;">Special Services</h2>
+    </div>
+<div class="grid-item h1"><h1 class="h1font">Services</h1></div>
+<div class="grid-item image1"><img src="images/grooming.jpg" class="image-outline" alt="grooming" style="width: 75%;"></div>
+<div class="grid-item text1"><h2 class="reg">Bathing</h2><p>Dog bathing</p></div>
+<div class="grid-item image2"><img src="images/why-dog-haircuts-960w.webp" class="image-outline" alt="haircut" style="width: 75%;"></div>
+<div class="grid-item text2"> <h2 class="reg">Fur cuts</h2><p>Fur trimming and cuts for dogs</p></div>
+<div class="grid-item image3"><img src="images/nail clipping.jpg" class="image-outline" alt="nailclipping" style="width: 75%;"></div>
+<div class="grid-item text3"><h2 class="reg">Nail clipping</h2><p>Trimming nails for dogs</p></div>
+<div class="grid-item image4"><img src="images/brushing-a-dog.jpg" class="image-outline" alt="dogbrushing" style="width: 75%;"></div>
+<div class="grid-item text4"><h2 class="reg">Fur brushing</h2><p>Brushing knots out dogs</p></div>
+</div> 
 <p class="footer" style="border: 3px solid rgb(57, 52, 36);">Khrish Butani</p>
 </body>
-
 </html>
