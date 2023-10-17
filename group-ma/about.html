@@ -6,22 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/oxu6wyu.css">
+    <style>
+        .navmenu {
+            grid-column: 1 / span 2;
+            grid-row: 1;
+        }
+
+        .header {
+            grid-column: 1 / span 2;
+            grid-row: 2;
+            font-size: 20px;
+        }
+
+        .video {
+            grid-column: 1;
+            grid-row: 3;
+        }
+    </style>
 </head>
 
 <body>
-    <ul class="nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a class="active-navpage" href="about.html">About Us</a></li>
-        <li><a href="contact.html">Schedule an Appointment</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="review.html">Reviews</a></li>
-        <li><a href="staff.html">Staff</a></li>
-        <li><a href="policies.html">Policies</a></li>
-    </ul>
-    <h1>About Us</h1>
-    <h2>Mission</h2>
-    <p class="footer" style="border: 3px solid rgb(57, 52, 36);">Made by Sam Knowlton</p>
+    <div class="grid-container">
+        <div class="grid-item navmenu">
+            <ul class="nav bold">
+                <li><a href="index.html">Home</a></li>
+                <li class="active-navpage"><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Schedule an Appointment</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="review.html">Reviews</a></li>
+                <li><a href="staff.html">Staff</a></li>
+                <li><a href="policies.html">Policies</a></li>
+            </ul>
 
+            <p class="footer bolditalic" style="border: 3px solid rgb(57, 52, 36);">Made by Sam Knowlton</p>
+        </div>
+        <div class="grid-item video">
+            <figure>
+                <iframe src="https://www.youtube.com/watch?v=8ku_LNlqhnE" height="300" width="450"></iframe>
+
+            </figure>
+
+        </div>
+        <div class="grid-item header bold">
+            <h1>About Us</h1>
+        </div>
+    </div>
 </body>
 
 </html>
