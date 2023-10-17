@@ -6,21 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/oxu6wyu.css">
 </head>
+<style>
+    .containergrid {
+        display: grid;
+        grid-template-columns: 50%, 50%;
+        grid-gap: 10px;
+    }
+
+    .Patel {
+        grid-column: 1;
+        grid-row: 3;
+
+    }
+
+    .Patel2 {
+        grid-column: 3;
+        grid-row: 4;
+    }
+
+    .Patel3 {
+        grid-column: 3;
+        grid-row: 5;
+    }
+
+    .Patel4 {
+        grid-column: 3;
+        grid-row: 6;
+    }
+
+    .Patel5 {
+        grid-column: 3;
+        grid-row: 3;
+    }
+</style>
 
 <body>
-    <ul class="nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a class="active-navpage" href="contact.html">Schedule an Appointment</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="review.html">Reviews</a></li>
-        <li><a href="staff.html">Staff</a></li>
-        <li><a href="policies.html">Policies</a></li>
-        <li><a href="services.html">Services</a></li>
-    </ul>
-    <h1>Schedule Information:</h1>
-    <h2>Email and Location</h2>
+    <div class="grid-container containergrid">
+        <div class="navmenu">
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Schedule an Appointment</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="review.html">Reviews</a></li>
+                <li><a class="active-navpage" href="staff.html">Staff</a></li>
+                <li><a href="policies.html">Policies</a></li>
+            </ul>
+        </div>
+        <div class="grid-item Patel">
+            <iframe style="width: 400px;"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d425003.0971565962!2d-112.18812460531264!3d33.67434492843256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b08d9a7772c97%3A0x26d2e412188fe618!2sScottsdale%2C%20AZ!5e0!3m2!1sen!2sus!4v1697560222090!5m2!1sen!2sus"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+        <div class="grid-item Patel2">
+            <img style="width: 500px;" src="images/groomer2.jpg" alt="">
+        </div>
+        <div class="grid-item Patel3">
+            <img style="width: 500px;" src="images/groomer3.jpg" alt="">
+        </div>
+        <div class="grid-item Patel4">
+            <img style="width: 500px;" src="images/groomer4.jpg" alt="">
+        </div>
+        <div class="grid-item Patel5">
+            <p class="bold">Hi, my name is Dylan, I am a dog groomer who grew up in Paulo Alto, California. My specialty
+                is giving
+                dogs baths and before becoming a dog groomer I wanted to be a veterinarian. </p>
+        </div>
+
+    </div>
 
 
 
