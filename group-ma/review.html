@@ -6,12 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/oxu6wyu.css">
+    <style>
+        .review1 {
+            grid-column: 1;
+            grid-row: 4/ span 1;
+        }
+
+        .review2 {
+            grid-column: 1;
+            grid-row: 5 / span 1;
+        }
+
+        .review3 {
+            grid-column: 1;
+            grid-row: 6 / span 1;
+        }
+
+        .review4 {
+            grid-column: 3;
+            grid-row: 4 / span 1;
+        }
+
+        .review5 {
+            grid-column: 3;
+            grid-row: 5 / span 1;
+        }
+
+        .review6 {
+            grid-column: 3;
+            grid-row: 6 / span 1;
+        }
+
+        .navmenu {
+            grid-column: 1 / span 3;
+            grid-row: 1;
+        }
+
+        .dogpic {
+            width: 300px;
+        }
+
+        .video {
+            grid-column: 2 / span 2;
+            grid-row: 2;
+        }
+
+        .header1 {
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        .text1 {
+            grid-column: 2;
+            grid-row: 4;
+        }
+
+        .text2 {
+            grid-column: 2;
+            grid-row: 5;
+        }
+
+        .text3 {
+            grid-column: 2;
+            grid-row: 6;
+        }
+    </style>
 </head>
 
 <body>
     <div class="grid-container">
         <div class="grid-item navmenu">
-            <ul class="nav">
+            <ul class="nav bold">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="contact.html">Schedule an Appointment</a></li>
@@ -20,9 +86,78 @@
                 <li><a href="staff.html">Staff</a></li>
                 <li><a href="policies.html">Policies</a></li>
             </ul>
-            <h1>Reviews</h1>
-            <h2>Check Out Our Previous Works!</h2>
-            <p class="footer" style="border: 3px solid rgb(57, 52, 36);">Made by Sam Knowlton</p>
+
+            <p class="footer bolditalic" style="border: 3px solid rgb(57, 52, 36);">Made by Sam Knowlton</p>
+        </div>
+        <div class="grid-item header1">
+            <p class="bold" style="font-size: 35px; float: left;">Reviews</p>
+            <table
+                style="font-size: 22px; float: left;padding: 10px; border: 2px solid rgb(40, 25, 14); box-shadow: 5px 5px 5px rgb(40, 25, 14);">
+                <tr>
+                    <td class="">Meeko:</td>
+                    <td class="">Akita Mix</td>
+                </tr>
+                <tr>
+                    <td class="">Freyja:</td>
+                    <td class="">Norwegian Elkhound</td>
+                </tr>
+                <tr>
+                    <td class="">Cowboy:</td>
+                    <td class="">Akbash/Mareema Mix</td>
+                </tr>
+            </table>
+        </div>
+        <div class="grid-item video">
+            <figure>
+                <iframe src="https://www.youtube.com/watch?v=qZ3OX7LRCzM" height="300" width="600"></iframe>
+                <figcaption style="font-size: 20px;" class="reg">One of our most popular grooming videos!</figcaption>
+            </figure>
+
+        </div>
+
+        <div class="grid-item review1 italic">
+            <img class="dogpic" src="images/Screenshot (167).png" alt="">
+            <p>Before
+            </p>
+        </div>
+        <div class="grid-item review2 italic">
+            <img class="dogpic" src="images/Screenshot (170).png" alt="">
+            <p>Before
+            </p>
+        </div>
+        <div class="grid-item review3 italic">
+            <img class="dogpic" src="images/Screenshot (173).png" alt="">
+            <p>Before
+            </p>
+        </div>
+        <div class="grid-item review4 italic">
+            <img class="dogpic" src="images/Screenshot (168).png" alt="">
+            <p>After
+            </p>
+        </div>
+        <div class="grid-item review5 italic">
+            <img class="dogpic" src="images/Screenshot (171).png" alt="">
+            <p>After
+            </p>
+        </div>
+        <div class="grid-item review6 italic">
+            <img class="dogpic" src="images/Screenshot (174).png" alt="">
+            <p>After
+            </p>
+        </div>
+        <div class="grid-item text1 reg">
+
+            <p>Belongs on the cover of Dogue!
+            </p>
+        </div>
+        <div class="grid-item text2 reg">
+
+            <p>Left Puppy Parlor smelling like lavendar!
+            </p>
+        </div>
+        <div class="grid-item text3 reg">
+            <p>Sure got the dust off of Cowboy's boots!
+            </p>
         </div>
     </div>
 </body>
