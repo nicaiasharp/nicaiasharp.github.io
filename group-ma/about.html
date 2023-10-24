@@ -21,14 +21,52 @@
 
         .video {
             grid-column: 1;
+            grid-row: 4;
+        }
+
+        .text1 {
+            grid-column: 2;
+            grid-row: 4;
+        }
+
+        .text2 {
+            grid-column: 1 / span 2;
+            grid-row: 5;
+        }
+
+        .photo1 {
+            grid-column: 1 / span 2;
             grid-row: 3;
+        }
+
+        .text {
+            cursor: text;
+        }
+
+        .auto {
+            cursor: auto;
+        }
+
+        .image-container:hover::after {
+            content: url(images/the-importance-of-dog-grooming-1.webp);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+            clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+
+        }
+
+        .image-container {
+            position: relative;
         }
     </style>
 </head>
 
 <body>
-    <div class="grid-container">
-        <div class="grid-item navmenu">
+    <div class="grid-container auto">
+        <div class="grid-item navmenu auto">
             <ul class="nav bold">
                 <li><a href="index.html">Home</a></li>
                 <li class="active-navpage"><a href="about.html">About Us</a></li>
@@ -41,15 +79,38 @@
 
             <p class="footer bolditalic" style="border: 3px solid rgb(57, 52, 36);">Made by Sam Knowlton</p>
         </div>
+
+        <div class="grid-item photo1 image-container">
+            <img src="images/pexels-gustavo-fring-6816860.jpg" alt=""
+                style="width: 65%; clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);">
+
+        </div>
+
         <div class="grid-item video">
             <figure>
-                <iframe src="https://www.youtube.com/watch?v=8ku_LNlqhnE" height="300" width="450"></iframe>
+                <iframe src="https://www.youtube.com/watch?v=8ku_LNlqhnE" height="300" width="350"></iframe>
 
             </figure>
 
         </div>
         <div class="grid-item header bold">
             <h1>About Us</h1>
+        </div>
+
+        <div class="grid-item text1 reg">
+            <p style="float: left;">At Puppy Parlor, we truly care about you and your dogs. As pet owners ourselves,
+                we understand the importance and desire to keep your dog's health in tip-top
+                shape, which is why we are committed to providing the best grooming you've ever seen.
+                We can't wait to blow you away!
+            </p>
+        </div>
+
+        <div class="grid-item text2 reg">
+            <p style="float: left;">
+                Dog owners from all over the world have travelled to Puptopia Washington
+                to experience our amazing grooming. Make sure to stop by next time your
+                dog needs a wash or trim!
+            </p>
         </div>
     </div>
 </body>
