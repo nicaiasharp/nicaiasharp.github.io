@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Messaround</title>
+    <style>
+        #spooky {
+            border: 15px solid transparent;
+            width: 250px;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Let's learn JavaScript!</h1>
+    <h2>How do we onclick events and alerts on an anchor</h2>
+    <a href="https://www.eastsideprep.org/" target="_blank" 
+        onclick="alert('Warning! You are navigating away from my site!')">Eastside Prep</a>
+
+    <h2>What's my secret identity?</h2>
+    <p id="secret"></p>
+    <button onclick="document.getElementById('secret').innerHTML='Nananannaanannanananananananannanananna BATMAAAAN';
+     document.getElementById('secret').style.display='block'">Reveal!!</button>
+    <button onclick="document.getElementById('secret').style.display='none'">Hide!</button>
+
+    <h2>how do we change an image with javavaav</h2>
+    <img id="bulb" src="images/off.gif" alt="off bulb">
+    <button onclick="document.getElementById('bulb').src='images/on.gif'">On</button>
+    <button onclick="document.getElementById('bulb').src='images/off.gif'">Off</button>
+
+    <h2>How do we change css styles with a button</h2>
+    <p id="alice">Hi I am alice</p>
+    <button onclick="document.getElementById('alice').style.color='blue'; document.getElementById('alice').style.fontSize='5px'">Cake! (Eat me)</button>
+    <button onclick="document.getElementById('alice').style.color='red'; document.getElementById('alice').style.fontSize='50px'">Potion! (Drink me)</button>
+    
+    <h2>how do we return user input</h2>
+    <button onclick="askName()">What's your name</button>
+    <p id="ask-name"></p>
+
+    <h2>change the background!</h2>
+    <button type="button" onclick="backdrop()">Set background image</button>
+
+    <div id="spooky">
+        <h2>Click on the button to make me spooky!</h2>
+    </div>
+
+    <button onclick="spooky()">Try it!</button>
+
+
+    <script>
+        function askName(){
+            let nameParagraph = document.getElementById('ask-name');
+            let name = prompt('What is your name?');
+            //decide what to do 
+            if (name === "batman"){
+                nameParagraph.innerHTML = "Welcome to the batcave."
+            }
+            else {
+                nameParagraph.innerHTML = "hello " + name;
+            }
+
+        }
+        function backdrop() {
+            document.body.style.backgroundColor = "#f3f3f3";
+            document.body.style.backgroundImage = "url('images/funny.png')";
+        }
+        function spooky () {
+            document.getElementById("spooky").style.WebkitBorderImage = "url(images/spooky.jpg) 30 30 round"; 
+        }
+    </script>
+
+</body>
+</html>
