@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Truths and a Lie</title>
+</head>
+<body>
+    <h1>Welcome to my Two Truths and a Lie Game!</h1>
+    <hr>
+    <h2>Introductions</h2>
+    <form action="" id="name-form">
+        <label for="fname">First Name:</label>
+        <input type="text" name="fname" id="fname"><br><br>
+        <label for="lname">Last Name:</label>
+        <input type="text" name="lname" id="lname"><br><br>
+        <label for="age">Age:</label>
+        <input type="text" name="age" id="age"><br>
+    </form>
+    <br>
+    <!--button to process above form input-->
+    <input type= "button" value="SUBMIT" onclick="greet()">
+    <p id="greet" style="font-size: x-large;">Welcome</p>
+
+    <hr>
+    <h2>Warm up trivia!</h2>
+    <h3>Which food does not expire?</h3>
+    <form action="">
+        <input type="radio" name="trivia" id="choco">
+        <label for="choco">Dark Chocolate</label><br>
+        <input type= "radio" name="trivia" id="tuna">
+        <label for="tuna">Canned Tuna</label><br>
+        <input type="radio" name="trivia" id="honey">
+        <label for="honey">Honey</label>
+    </form>
+    <p id="trivia-answer"></p>
+
+    <input type="button" value="SUBMIT" onclick="trivia()">
+
+    <hr>
+    <h2>Pick Which Option You Think is The Lie</h2>
+    <form action="">
+        <input type="radio" name="ttl" id="dog">
+        <label for="dog">I have 4 dogs.</label><br>
+        <input type= "radio" name="ttl" id="cat">
+        <label for="cat">I have 2 cats.</label><br>
+        <input type="radio" name="ttl" id="chick">
+        <label for="chick">I have 9 chickens.</label>
+    </form>
+    <p id="ttl-answer"></p>
+
+    <input type="button" value="SUBMIT" onclick="ttl()">
+
+    <hr>
+    <h2>Challenge:</h2>
+    <h2>Now... choose which 2 you think are true!</h2>
+    <form action="">
+        <input type="checkbox" name="challenge" id="fall">
+        <label for="fall">I was born in the fall.</label><br>
+        <input type= "checkbox" name="challenge" id="chai">
+        <label for="chai">I love pumpkin chai.</label><br>
+        <input type="checkbox" name="challenge" id="holiday">
+        <label for="holiday">Halloween is my fav holiday.</label>
+    </form>
+    <p id="challenge-answer"></p>
+
+    <input type="button" value="SUBMIT" onclick="challenge()">
+
+    <!--add link to js file-->
+    <script src="js/game.js"></script>
+</body>
+</html>
