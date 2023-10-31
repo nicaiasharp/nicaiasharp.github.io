@@ -1,0 +1,84 @@
+/*fonts*/
+.reg {
+    font-family: "kepler-std", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.bold {
+    font-family: "kepler-std", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.italic {
+    font-family: "kepler-std", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+.italic-caption {
+    font-family: "kepler-std-caption", serif;
+    font-weight: 300;
+    font-style: italic;
+}
+/*colors*/
+.sagebg {
+    background-color: rgb(196, 197, 186);
+}
+.darkgreenbg {
+    background-color: rgb(43, 59, 45);
+}
+.mossbg {
+    background-color: rgb(89, 95, 57);
+}
+body {
+    background-color: rgb(27, 27, 27)
+}
+.container {
+    margin: 20px 50px;
+    border: 2px solid black;
+    padding: 50px;
+    background-color: rgb(196, 197, 186);
+}
+/*nav*/
+.nav {
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+}
+.nav li {
+    float: left;
+}
+.nav li a {
+    display: block;
+    text-align: center;
+    padding: 4px 10px;
+    text-decoration: none;
+    font-size: large;
+    color: black;
+    transition-duration: 0.4s;
+}
+.nav li a:hover {
+    color: rgb(196, 197, 186)
+}
+.active-navpage {
+    font-family: "kepler-std", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.navmenu {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+}
+/*general*/
+.button {
+    transition-duration: 0.4s;
+    text-decoration: none;
+    padding: 8px 15px;
+    color: rgb(40, 25, 14);
+    border: 2px solid rgb(89, 95, 57);
+    margin: 20px;
+}
+.button:hover {
+    background-color: rgb(89, 95, 57);
+    color: rgb(196, 197, 186);
+}
