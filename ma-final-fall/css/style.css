@@ -20,23 +20,23 @@
     font-style: italic;
 }
 /*colors*/
-.sagebg {
-    background-color: rgb(196, 197, 186);
+.graybg {
+    background-color: rgb(223, 225, 223);
 }
-.darkgreenbg {
-    background-color: rgb(43, 59, 45);
+.claybg {
+    background-color: rgb(135, 124, 113);
 }
-.mossbg {
-    background-color: rgb(89, 95, 57);
+.brownbg {
+    background-color: rgb(190, 171, 157);
 }
-body {
-    background-color: rgb(27, 27, 27)
+.dbrown {
+    background-color: rgb(80, 76, 68);
 }
 .container {
-    margin: 20px 50px;
-    border: 2px solid black;
-    padding: 50px;
-    background-color: rgb(196, 197, 186);
+    margin: 50px auto;
+    border: 2px solid rgb(80, 76, 68);
+    padding: 25px 50px;
+    background-color: white;
 }
 /*nav*/
 .nav {
@@ -58,7 +58,7 @@ body {
     transition-duration: 0.4s;
 }
 .nav li a:hover {
-    color: rgb(196, 197, 186)
+    color: rgb(223, 225, 223);
 }
 .active-navpage {
     font-family: "kepler-std", serif;
@@ -75,10 +75,10 @@ body {
     text-decoration: none;
     padding: 8px 15px;
     color: rgb(40, 25, 14);
-    border: 2px solid rgb(89, 95, 57);
+    border: 2px solid rgb(80, 76, 68);
     margin: 20px;
 }
 .button:hover {
-    background-color: rgb(89, 95, 57);
-    color: rgb(196, 197, 186);
+    background-color: rgb(135, 124, 113);
+    color: rgb(223, 225, 223);
 }

@@ -54,10 +54,10 @@
             <div class="row">
                 <!--md = meant for med screens and 4 is the span - all columns need to add up to 12-->
                 <div class="col-md-3" style="text-align: left;">
-                    <form onsubmit="sendEmail (); reset(); return false">
+                    <form action="https://formspree.io/f/mdorjnjb" method="POST" onsubmit="reset (); return">
                         <input type="text" id="name" placeholder="Your Name" required>
                         <input type="email" id="email" placeholder="Email" required>
-                        <textarea id="Message" rows="4" placeholder="How "></textarea>
+                        <textarea id="Message" rows="4" placeholder="How can I help you?"></textarea>
                         <button class="button" type="submit">Submit</button>
                     </form>
                 </div>
@@ -88,21 +88,5 @@
 
 
     </div>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function sendEmail () {
-            Email.send({
-                Host : "smtp.gmail.com",
-                Username : "nicaiasharp@gmail.com",
-                Password : "Lilac4me",
-                To : 'nicaiasharp@gmail.com',
-                From : document.getElementById("email").value,
-                Subject : "New Contact Form Inquiry",
-                Body : "And this is the body"
-            }).then(
-            message => alert(message)
-            );
-        }
-    </script>
 </body>
 </html>
