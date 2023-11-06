@@ -20,7 +20,7 @@
             margin: 10px 0;
             padding: 20px;
             outline: none;
-            background-color: rgb(228, 227, 222);
+            background-color: rgb(223, 225, 223);
             font-size: 16px;
         }
         form button {
@@ -32,10 +32,10 @@
         }
     </style>
 </head>
-<body class="darkgreenbg reg">
+<body class="graybg reg">
     <div class="container" style="padding-top: 25px;">
         <h1 class="bold" style="text-align: center; font-size: 60px;"><img style="width: 80px;" src="images/logo.png" alt="Sharp Designs Logo"> Sharp Designs</h1>
-        <nav class="navbar navbar-expand-sm mossbg navbar-dark">
+        <nav class="navbar navbar-expand-sm claybg navbar-dark">
             <div class="container-fluid navmenu">
                 <ul class="nav">
                     <li><a style="font-size: 20px;" href="index.html">Home</a></li>
@@ -54,10 +54,10 @@
             <div class="row">
                 <!--md = meant for med screens and 4 is the span - all columns need to add up to 12-->
                 <div class="col-md-3" style="text-align: left;">
-                    <form action="https://formspree.io/f/mdorjnjb" method="POST" onsubmit="reset (); return">
-                        <input type="text" id="name" placeholder="Your Name" required>
-                        <input type="email" id="email" placeholder="Email" required>
-                        <textarea id="Message" rows="4" placeholder="How can I help you?"></textarea>
+                    <form action="https://formsubmit.co/9db5bb0053d5b8d061c233ba23fb396c" method="POST">
+                        <input type="text" id="name" name="Name" placeholder="Your Name" required>
+                        <input type="email" id="email" name="Email" placeholder="Email" required>
+                        <textarea id="Message" rows="4" name="Message" placeholder="How can I help you?" required></textarea>
                         <button class="button" type="submit">Submit</button>
                     </form>
                 </div>

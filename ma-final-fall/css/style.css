@@ -33,7 +33,7 @@
     background-color: rgb(80, 76, 68);
 }
 .container {
-    margin: 50px auto;
+    margin: 90px auto;
     border: 2px solid rgb(80, 76, 68);
     padding: 25px 50px;
     background-color: white;
@@ -58,7 +58,7 @@
     transition-duration: 0.4s;
 }
 .nav li a:hover {
-    color: rgb(223, 225, 223);
+    color: white;
 }
 .active-navpage {
     font-family: "kepler-std", serif;
@@ -75,10 +75,10 @@
     text-decoration: none;
     padding: 8px 15px;
     color: rgb(40, 25, 14);
-    border: 2px solid rgb(80, 76, 68);
+    border: 2px solid rgb(135, 124, 113);
     margin: 20px;
 }
 .button:hover {
     background-color: rgb(135, 124, 113);
-    color: rgb(223, 225, 223);
+    color: white;
 }
