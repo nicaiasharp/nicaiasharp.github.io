@@ -83,3 +83,8 @@
     background-color: rgb(135, 124, 113);
     color: white;
 }
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
