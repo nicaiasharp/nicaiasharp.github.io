@@ -1,0 +1,45 @@
+/*nav*/
+.nav {
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+}
+.nav li {
+    float: left;
+}
+.nav li a {
+    display: block;
+    text-align: center;
+    padding: 4px 10px;
+    text-decoration: none;
+    font-size: large;
+    color: black;
+    transition-duration: 0.4s;
+}
+.nav li a:hover {
+    color: white;
+}
+.active-navpage {
+    font-weight: 700;
+    font-style: normal;
+}
+.navmenu {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+}
+/*general*/
+.pinkbg {
+    background-color: pink;
+}
+.container {
+    margin: 50px auto;
+    border: 2px solid rgb(239, 116, 196);
+    padding: 15px 30px;
+    background-color: rgb(236, 145, 199);
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
