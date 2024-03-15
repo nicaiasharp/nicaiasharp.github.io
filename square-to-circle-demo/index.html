@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square to circle animation demo</title>
+    <style>
+        .square {
+            width: 200px;
+            height: 200px;
+            background-color: lightpink;
+            margin: 200px auto;
+            animation-name: square-to-circle; /*naming animation*/
+            animation-duration: 3s; 
+            animation-delay: 1s; /*how long until it starts on first load*/
+            animation-iteration-count: infinite;
+            animation-timing-function: linear; /*smooth*/
+            animation-direction: alternate; /*square to circle then back to square*/
+        }
+       @keyframes square-to-circle {
+        0% {
+            border-radius: 0;
+            background-color: lightpink;
+            transform: rotate(0deg);
+        }
+        25% {
+            border-radius: 50% 0 0 0;
+            background-color: rgba(248, 140, 156, 0.75);
+            transform: rotate(45deg);
+            opacity: 75%;
+            border: 0.5px solid black;
+        }
+        50% {
+            border-radius: 50% 50% 0 0;
+            background-color: rgba(246, 109, 203, 0.5);
+            opacity: 50%;
+            transform: rotate(90deg);
+            border: 2px solid black;
+            box-shadow: 2px 2px 1px rgb(91, 208, 247);
+        }
+        75% {
+            border-radius: 50% 50% 50% 0;
+            background-color: rgba(240, 80, 237, 0.25);
+            transform: rotate(135deg);
+            border: 5px solid black;
+            box-shadow: 5px 5px 2px rgb(91, 208, 247);
+        }
+        100% {
+            border-radius: 50%;
+            background-color: rgba(166, 0, 255, 0);
+            transform: rotate(180deg);
+            border: 10px solid black;
+            box-shadow: 10px 10px 5px rgb(91, 208, 247);
+        }
+       }
+    </style>
+</head>
+<body>
+    <div class="square">
+
+    </div>
+</body>
+<footer>
+    
+</footer>
+</html>
