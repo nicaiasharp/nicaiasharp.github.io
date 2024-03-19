@@ -43,3 +43,40 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .button {
+    transition-duration: 0.4s;
+    text-decoration: none;
+    padding: 8px 15px;
+    color: rgb(40, 25, 14);
+    border: 2px solid rgb(146, 5, 127);
+    margin: 20px;
+}
+.button:hover {
+    background-color: rgb(249, 168, 230);
+    color: white;
+}
+/*fonts*/
+.reg {
+    font-family: "roca", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.bold {
+    font-family: "roca", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+/*footer*/
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: -18px;
+    width: 100%;
+    background-color: rgb(254, 194, 255);
+    color: black;
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 5px;
+    font-size: 18px;
+    border: 2px solid black;
+  }
