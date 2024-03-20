@@ -55,6 +55,10 @@
     background-color: rgb(249, 168, 230);
     color: white;
 }
+.center {
+    display: block;
+    margin: 40px auto;
+}
 /*fonts*/
 .reg {
     font-family: "roca", sans-serif;
