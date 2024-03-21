@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharp | Pseudo Demo</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Web 2!</h1>
+        <h4>Today, we will mess with some Pseudo Classes and Elements</h4>
+
+        <h2>Let's first dive deeper into CSS</h2>
+        <p>If we think of CSS in terms of selectors, properties, and values, then a typical CSS entry would look like this:</p>
+        <pre>
+            <code>
+                selector {property: value;}
+            </code>
+        </pre>
+        <p>To style the above, we need to add two tags together. We call this CSS Combinators</p>
+
+        <h2>What are Pseudo Classes?</h2>
+        <p>Again, if we think of CSS in terms of selectors, properties and values, then pseudo class is an addon to a selector</p>
+        <p>A typical CSS entry calling on Pseudo Class would look like this:</p>
+        <pre>
+            <code>
+                selector:pseudo_class {property: value;}
+            </code>
+        </pre>
+        <h4>We use Pseudo Class for Links</h4>
+        <p>If we want our <a href="http://">link</a> to look different, we can simply add it in css as follows:</p>
+        <pre>
+            <code>
+                a {color: red;}
+            </code>
+        </pre>
+        <p>If we want our <a href="#">link states</a> to look different then we will use a pseudo class like:</p>
+        <ul>
+            <li>:visited</li>
+            <li>:hover</li>
+            <li>:active</li>
+        </ul>
+        <p>But we can also make a <a class="special" href="#">new link</a> look different.</p>
+        <h4>We can even call on specific selectors depending on their hierarchy.</h4>
+        <div id="first">
+            <p>This text will change because it is the first child of the new div.</p>
+            <p>This will look different because it is the last child.</p>
+        </div>
+
+        <h2>What are Pseudo Elements?</h2>
+        <p id="pseudo-elements">Again, if we think of pseudo classes as add-ons, then we can think of pseudo elements of creatin new elements from a selector.</p>
+
+    </div>
+</body>
+</html>
