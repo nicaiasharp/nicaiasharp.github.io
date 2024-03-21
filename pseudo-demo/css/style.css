@@ -57,3 +57,22 @@ a.special {
     content: "Remember this:";
     font-weight: bold;
 }
+/*random*/
+::marker { 
+    color: red;
+    font-size: 23px;
+}
+::selection {
+    color: rgb(179, 0, 255);
+    background: rgb(158, 176, 255);
+}
+.circle {
+    width: 200px;
+    height: 200px;
+    background-color: lightgrey;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+.circle:hover {
+    background-color: pink;
+}
