@@ -43,7 +43,7 @@
     margin-left: auto;
     margin-right: auto;
   }
-  .button {
+.button {
     transition-duration: 0.4s;
     text-decoration: none;
     padding: 8px 15px;
