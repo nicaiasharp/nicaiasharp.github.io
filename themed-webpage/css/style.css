@@ -1,0 +1,21 @@
+/*fonts*/
+.reg {
+    font-family: "miller-banner", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.italic {
+    font-family: "miller-banner", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+.bold {
+    font-family: "miller-banner", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.bolditalic {
+    font-family: "miller-banner", serif;
+    font-weight: 700;
+    font-style: italic;
+}
