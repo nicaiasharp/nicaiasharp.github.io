@@ -44,7 +44,7 @@ text {
     text-decoration: none;
     padding: 8px 15px;
     color: rgb(0, 0, 0);
-    border: 2px solid rgb(0, 0, 0);
+    border: 3px solid rgb(0, 0, 0);
     margin: 20px;
 }
 .button:hover {
