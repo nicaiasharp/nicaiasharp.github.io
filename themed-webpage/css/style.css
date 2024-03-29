@@ -1,0 +1,60 @@
+/*fonts*/
+.reg {
+    font-family: "miller-banner", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+.italic {
+    font-family: "miller-banner", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+.bold {
+    font-family: "miller-banner", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.bolditalic {
+    font-family: "miller-banner", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+/*general*/
+.container {
+    width: 100%;
+}
+body {
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+text {
+    padding: 20px;
+    font-size: 25px;
+}
+.button {
+    transition-duration: 0.4s;
+    text-decoration: none;
+    padding: 8px 15px;
+    color: rgb(0, 0, 0);
+    border: 3px solid rgb(0, 0, 0);
+    margin: 20px;
+}
+.button:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+/*pseudo*/
+#pseudo-elements::first-letter {
+    color: rgb(0, 0, 0);
+    font-size: 70px;
+}
+
