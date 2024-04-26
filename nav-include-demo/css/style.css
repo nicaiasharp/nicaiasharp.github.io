@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(241, 251, 254);
+}
+.menu-item {
+    font-weight: bold;
+    text-decoration: none;
+    list-style-type: none;
+}
+.menu-item a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+.button {
+    transition-duration: 0.4s;
+    text-decoration: none;
+    padding: 8px 15px;
+    color: rgb(40, 25, 14);
+    border: 2px solid rgb(56, 106, 171);
+    margin: 10px;
+    width: 20%;
+    float: left;
+    margin-top: 50px;
+}
+.button:hover {
+    background-color: rgb(56, 106, 171);
+    color: white;
+}
+.container {
+    margin: 20px 40px;
+    text-align: center;
+}
+.header {
+    clear: both;
+    text-align: center;
+    padding: 10px;
+}
+.footer {
+    padding: 5px;
+    background-color: rgb(208, 226, 255);
+    clear: both;
+}
