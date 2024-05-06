@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.header {
+    background-color: rgb(255, 149, 114);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+/* Now style the three responsive div's */
+/* responsive elements */ 
+.left {
+    float: left;
+    width: 20%;
+}
+.dropbtn {
+    background-color: rgb(255, 149, 114);
+    color: white;
+    padding: 16px;
+    font-size: 25px;
+    border: none;
+  }
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {background-color: #ddd;}
+  
+.dropdown:hover .dropdown-content {display: block;}
+  
+.dropdown:hover .dropbtn {background-color: rgb(215, 109, 73);}
+.main {
+    float: left;
+    width: 60%;
+}
+.right {
+    float: left;
+    width: 20%;
+}
+/* talk about basic layout and what can we do to fix it */
+.right {
+    background-color: rgb(255, 149, 114);
+    color: white;
+}
+.main {
+    padding: 0 20px;
+}
+.right {
+    padding: 15px;
+}
+/* why did we bump down and why did footer fill the void? */
+* {
+    box-sizing: border-box;
+}
+.right {
+    margin-top: 10px;
+}
+/* Now to style links.  remember pseudo elements? */
+.side-nav a {
+    background-color: rgb(255, 149, 114);
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+    transition-duration: 0.3s;
+}
+
+.side-nav a:hover {
+    background-color: rgb(215, 109, 73);
+}
+/* style footer */
+.footer {
+    background-color: rgb(255, 149, 114);
+    color: white;
+    padding: 10px;
+}
+/* broken then add to top */
+.footer {
+    clear: both;
+    margin-top: 10px;
+}
+/* not margin top -- how do we fix?  style container */
+.container {
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+}
+/* Lastly center it a bit */
+footer {
+    width: 60%;
+    margin: 0 auto;
+}
+/* last step. make it responsive */
+/* for mobile phones */
+@media only screen and (max-width:620px) {
+    .left, .main, .right {
+    width:100%;
+    }
+}
+/* if time, tablet */
+/* for tablet */
+@media (min-width:621px) and (max-width:1000px) {
+   .main {
+        width: 80%;
+    }
+    .right {
+    width:100%;
+    }
+}
+/* and font below body*/
+h1 {
+    font-size: 5vw;
+}
+h2 {
+    font-size: 2vw;
+}
+h3 {
+    font-size: 1.8vw;
+}
+p, a {
+    font-size: 1.6vw;
+}
+
+.nav {
+    height: 200px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: -50px;
+}
+
+.nav-inner {
+    float: left;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    float: left;
+    width: 30%;
+    padding-left: 40px;
+}
+
+nav {
+    float: left;
+    width: 70%;
+    text-align: right;
+    padding: 50px 40px;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 0 20px;
+    transition-duration: 0.3s;
+}
+nav a:hover {
+    color: darkorange;
+}
