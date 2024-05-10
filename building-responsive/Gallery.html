@@ -18,18 +18,21 @@
 </head>
 <body>
 
-    <div class="nav">
-        <div class="nav-inner">
-            <div class="logo">
-                <img src="images/logo.png" alt="Logo" style="width: 150px;">
-            </div>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="Gallery.html">Gallery</a>
-            </nav>
+    <!--nav code from https://alvarotrigo.com/blog/hamburger-menu-css/ demo-->
+    <section class="top-nav">
+        <div>
+            <img class="logo" src="images/logo.png" alt="Logo" >
         </div>
-    </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+      </label>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+        </ul>
+      </section>
     <div class="container">
         <div class="header">
             <h1>Experiment Gallery</h1>

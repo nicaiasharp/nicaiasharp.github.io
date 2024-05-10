@@ -1,43 +1,181 @@
 * {
     box-sizing: border-box;
 }
-.nav {
-    height: 140px;
-    background-color: black;
-    color: white;
+/*nav code from https://alvarotrigo.com/blog/hamburger-menu-css/ demo*/
+.top-nav {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    top: -10px;
-    z-index: 999;
+    justify-content: space-between;
+    background-color: #000000;
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #FFF;
+    height: 140px;
+    padding: 1em;
 }
-
-.nav-inner {
-    float: left;
-    width: 100%;
-    top: 0;
-}
-
-.logo {
-    float: left;
-    width: 30%;
-    padding-left: 40px;
-}
-
-nav {
-    float: left;
-    width: 70%;
-    text-align: right;
-    padding: 60px 40px;
-}
-nav a {
+li a {
     text-decoration: none;
     color: white;
-    padding: 0 20px;
-    transition-duration: 0.3s;
+    transition-duration: 0.2s;
 }
-nav a:hover {
+li a:hover {
     color: rgb(255, 149, 114);
 }
+.logo {
+    height: 150px;
+}
+  
+  .menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    top: -50px;
+  }
+  
+  .menu > li {
+    margin: 0 1rem;
+    overflow: hidden;
+    z-index: 999;
+  }
+  
+  .menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+  
+  .menu-button,
+  .menu-button::before,
+  .menu-button::after {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+  }
+  
+  .menu-button::before {
+    content: '';
+    margin-top: -8px;
+  }
+  
+  .menu-button::after {
+    content: '';
+    margin-top: 8px;
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0);
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+  }
+  
+  @media (max-width: 700px) {
+    .logo {
+        height: 50px;
+        margin-top: 8px;
+    }
+    .menu-button-container {
+      display: flex;
+    }
+    .menu {
+      position: absolute;
+      top: 0;
+      margin-top: 50px;
+      left: 0;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+    #menu-toggle ~ .menu li {
+      height: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    #menu-toggle:checked ~ .menu li {
+      border: 1px solid #333;
+      height: 2.5em;
+      padding: 0.5em;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    .menu > li {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0.5em 0;
+      width: 100%;
+      color: white;
+      background-color: #222;
+    }
+    .menu > li:not(:last-child) {
+      border-bottom: 1px solid #444;
+    }
+    .top-nav {
+        height: 50px;
+    }
+    .left, .main, .right {
+        width: 100%;
+    }
+
+    .flip-card {
+        width: 25vw;
+        height: 25vw;
+    }
+    
+    .container img {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .fa {
+        font-size: 4vw;
+    }
+
+    h1 {
+        font-size: 10vw;
+    }
+
+    h2 {
+        font-size: 5vw;
+    }
+
+    h3 {
+        font-size: 4vw;
+    }
+
+    p, a {
+        font-size: 3vw;
+    }
+
+  }
+
 body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
@@ -320,8 +458,73 @@ hr {
     max-width: 70%;
     margin: 15px;
 }
-/* For screens smaller than 620px */
-@media only screen and (max-width: 620px) {
+
+/* For screens between 621px and 1000px */
+@media (min-width: 621px) and (max-width: 1000px) {
+    .main {
+        width: 70%;
+    }
+
+    .right {
+        width: 30%;
+    }
+
+    nav {
+        width: auto;
+        text-align: right;
+    }
+
+    .nav a {
+        display: inline-block;
+        padding: 0 10px;
+    }
+}
+@media (max-width: 700px) {
+    .logo {
+        height: 50px;
+        margin-top: 8px;
+    }
+    .menu-button-container {
+      display: flex;
+    }
+    .menu {
+      position: absolute;
+      top: 0;
+      margin-top: 50px;
+      left: 0;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+    #menu-toggle ~ .menu li {
+      height: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    #menu-toggle:checked ~ .menu li {
+      border: 1px solid #333;
+      height: 2.5em;
+      padding: 0.5em;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    .menu > li {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0.5em 0;
+      width: 100%;
+      color: white;
+      background-color: #222;
+    }
+    .menu > li:not(:last-child) {
+      border-bottom: 1px solid #444;
+    }
+    .top-nav {
+        height: 50px;
+    }
     .left, .main, .right {
         width: 100%;
     }
@@ -359,29 +562,7 @@ hr {
     p, a {
         font-size: 3vw;
     }
-}
-
-/* For screens between 621px and 1000px */
-@media (min-width: 621px) and (max-width: 1000px) {
-    .main {
-        width: 70%;
-    }
-
-    .right {
-        width: 30%;
-    }
-
-    nav {
-        width: auto;
-        text-align: right;
-    }
-
-    .nav a {
-        display: inline-block;
-        padding: 0 10px;
-    }
-}
-
+  }
 /* For screens smaller than 300px */
 @media screen and (max-width: 300px) {
     .cancelbtn, .signupbtn {
