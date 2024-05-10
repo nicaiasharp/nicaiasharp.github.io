@@ -56,7 +56,7 @@ body {
     background-color: rgb(255, 149, 114);
     color: white;
     padding: 16px;
-    font-size: 25px;
+    font-size: 1.8vw;
     border: none;
     transition-duration: 0.2s;
   }
@@ -88,9 +88,26 @@ body {
   
 .dropdown:hover .dropbtn {background-color: rgb(215, 109, 73);}
 
+.ribbon {
+    width: 60px;
+    font-size: 1.6vw;
+    padding: 4px;
+    position: absolute;
+    right: -25px;
+    top: -12px;
+    text-align: center;
+    border-radius: 25px;
+    transform: rotate(20deg);
+    background-color: #000000;
+    color: white;
+}
+
 .main {
     float: left;
     width: 70%;
+}
+.content {
+    overflow: hidden;
 }
 input[type=text], input[type=password] {
     width: 100%;
@@ -107,18 +124,20 @@ input[type=text]:focus, input[type=password]:focus {
 }
   
 button {
-    background-color: #04AA6D;
+    background-color: rgb(255, 149, 114);
     color: white;
     padding: 14px 20px;
-    margin: 8px 0;
+    margin: 15px auto;
+    display: block;
     border: none;
     cursor: pointer;
     width: 100%;
-    opacity: 0.9;
+    transition-duration: 0.3s;
+    font-size: 1.8vw;
 }
   
 button:hover {
-    opacity:1;
+    background-color: rgb(215, 109, 73);;
 }
   
 .cancelbtn {
@@ -164,7 +183,7 @@ hr {
     position: absolute;
     right: 35px;
     top: 15px;
-    font-size: 40px;
+    font-size: 1.8vw;
     font-weight: bold;
     color: #f1f1f1;
 }
@@ -220,7 +239,7 @@ hr {
 }
 .fa {
     padding: 20px;
-    font-size: 30px;
+    font-size: 1.8vw;
     width: 50px;
     text-align: center;
     text-decoration: none;
