@@ -156,14 +156,6 @@ li a:before {
         height: 50px;
     }
 }
-.hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photographer.jpg");
-    height: 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
   
   .hero-text {
     text-align: center;
@@ -175,27 +167,75 @@ li a:before {
   }
 /*fonts*/
 .thin {
-    font-family: "aileron", sans-serif;
-    font-weight: 100;
-    font-style: normal;
+  font-family: "aileron", sans-serif;
+  font-weight: 100;
+  font-style: normal;
 }
 .reg {
-    font-family: "aileron", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "aileron", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .italic {
-    font-family: "aileron", sans-serif;
-    font-weight: 400;
-    font-style: italic;
+  font-family: "aileron", sans-serif;
+  font-weight: 400;
+  font-style: italic;
 }
 .bold {
-    font-family: "aileron", sans-serif;
-    font-weight: 700;
-    font-style: normal;
+  font-family: "aileron", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 .bitalic {
-    font-family: "aileron", sans-serif;
-    font-weight: 700;
-    font-style: italic;
+  font-family: "aileron", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+/*title transformation from https://www.sliderrevolution.com/resources/css-text-animation/*/
+.title {
+  text-align: left;
+  overflow:hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -webkit-transform: translate3d(0,0,0);
+}
+
+.title div {
+  display:inline-block;
+  overflow:hidden;
+  white-space:nowrap;
+}
+
+.title div:first-of-type {
+  animation: showup 7s infinite;
+}
+
+.title div:last-of-type {
+  animation: reveal 7s infinite;
+}
+
+.title div:last-of-type span {
+  animation: slidein 7s infinite;
+}
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:355px;}
+    80% {opacity:1;}
+    100% {opacity:0;width:355px;}
 }
