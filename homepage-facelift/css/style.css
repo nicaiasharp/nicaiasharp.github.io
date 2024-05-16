@@ -18,6 +18,10 @@ body {
   color: white;
   text-decoration: none;
 }
+.service a {
+  color: white;
+  text-decoration: none;
+}
 /*nav code from https://alvarotrigo.com/blog/hamburger-menu-css/ demo*/
 .top-nav {
     display: flex;
