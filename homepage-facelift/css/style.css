@@ -317,3 +317,15 @@ footer a:hover {
     padding-top: 20vw;
   }
 }
+@media (min-width: 621px) and (max-width: 1080px) {
+  .featured {
+    padding-top: 30vw;
+  }
+  .landing-text {
+    margin-left: -18%;
+  }
+  .landing img {
+    width: 100%;
+    margin-left: 22vw;
+  }
+}
