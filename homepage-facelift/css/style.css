@@ -6,7 +6,17 @@ body {
     color: white;
 }
 .container {
-  padding: 10vw;
+  padding: 2vw;
+}
+.section {
+  padding-bottom: 5vw;
+}
+.item {
+  padding: 4vw;
+}
+.item a {
+  color: white;
+  text-decoration: none;
 }
 /*nav code from https://alvarotrigo.com/blog/hamburger-menu-css/ demo*/
 .top-nav {
@@ -168,6 +178,39 @@ li a:before {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+/*images*/
+.fade-in-image:hover {
+  opacity: 100%;
+}
+.fade-in-image {
+  opacity: 50%;
+  transition: opacity 0.8s;
+  border: 1px solid white;
+  align-items: center;
+  width: 100%;
+}
+.hover-text {
+  opacity: 0;
+  transition: opacity 0.8s ease;
+  text-align: center;
+}
+
+.fade-in-image:hover + .hover-text {
+  opacity: 1; 
+}
+footer {
+  padding: 1vw;
+  color: white;
+  text-align: center;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  transition-duration: 0.2s;
+}
+footer a:hover {
+  opacity: 0.8;
+}
 /*fonts*/
 .thin {
   font-family: "aileron", sans-serif;
@@ -211,15 +254,15 @@ li a:before {
 }
 
 .title div:first-of-type {
-  animation: showup 7s infinite;
+  animation: showup 10s infinite;
 }
 
 .title div:last-of-type {
-  animation: reveal 7s infinite;
+  animation: reveal 10s infinite;
 }
 
 .title div:last-of-type span {
-  animation: slidein 7s infinite;
+  animation: slidein 10s infinite;
 }
 
 @keyframes showup {
