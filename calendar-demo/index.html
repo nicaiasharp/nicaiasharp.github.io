@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
     <meta charset="utf-8">
-    <title>Sharp | Find your own demo</title>
+    <title>Sharp | Find your own demo pt 2</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Icons-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
@@ -11,27 +11,222 @@
     <script src="js/script.js" defer></script>
 </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <p class="current-date"></p>
-        <div class="icons">
-          <span id="prev" class="material-symbols-rounded">chevron_left</span>
-          <span id="next" class="material-symbols-rounded">chevron_right</span>
+    <h1 style="text-align: center; margin: 5%; background-color: rgb(234, 234, 234); padding: 1%; border-radius: 15px;">How to Add a Dynamic Calendar Using CSS and JS <br>(full demo at the bottom of page)</h1>
+    <div class="container">
+      <h2>1: Add the external icon link to the HTML head</h2>
+      <pre>
+        <code>
+          &lt;link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"&gt;
+        </code>
+      </pre>
+      <h2>2: Create a DIV element with the class "wrapper" to encase the calendar. Add a header to the DIV and fill it with the a p tag for the current month and year, and a new DIV (class name: "icons") to hold the previous and next month icons. This formats the top of the calendar.</h2>
+      <img src="images/2.jpg" alt="Step 2">
+      <pre>
+        <code>
+          &lt;header&gt;
+            &lt;p class="current-date"&gt;&lt;/p&gt;
+            &lt;div class="icons"&gt;
+                &lt;span id="prev" class="material-symbols-rounded"&gt;chevron_left&lt;/span&gt;
+                &lt;span id="next" class="material-symbols-rounded"&gt;chevron_right&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/header&gt; 
+        </code>
+      </pre>
+      <h2>3: Create a Calendar DIV inside the Wrapper DIV and create a list with the week abbreviations. Under that list, create a new unordered list with with the class "days" to later display days of the month.</h2>
+      <img src="images/3.jpg" alt="Step 3">
+      <pre>
+        <code>
+            &lt;div class="calendar"&gt;
+              &lt;ul class="weeks"&gt;
+                &lt;li&gt;Sun&lt;/li&gt;
+                &lt;li&gt;Mon&lt;/li&gt;
+                &lt;li&gt;Tue&lt;/li&gt;
+                &lt;li&gt;Wed&lt;/li&gt;
+                &lt;li&gt;Thu&lt;/li&gt;
+                &lt;li&gt;Fri&lt;/li&gt;
+                &lt;li&gt;Sat&lt;/li&gt;
+              &lt;/ul&gt;
+              &lt;ul class="days"&gt;&lt;/ul&gt;
+            &lt;/div&gt;
+        </code>
+    </pre>
+    <h2>4: Add the stylesheet CSS components to the calendar for formatting and display</h2>
+    <pre>
+      <code>
+        .wrapper{
+          width: 450px;
+          background: #fff;
+          border-radius: 10px;
+          box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+        }
+        .wrapper header{
+          display: flex;
+          align-items: center;
+          padding: 25px 30px 10px;
+          justify-content: space-between;
+        }
+        header .icons{
+          display: flex;
+        }
+        header .icons span{
+          height: 38px;
+          width: 38px;
+          margin: 0 1px;
+          cursor: pointer;
+          color: #878787;
+          text-align: center;
+          line-height: 38px;
+          font-size: 1.9rem;
+          user-select: none;
+          border-radius: 50%;
+        }
+        .icons span:last-child{
+          margin-right: -10px;
+        }
+        header .icons span:hover{
+          background: #f2f2f2;
+        }
+        header .current-date{
+          font-size: 1.45rem;
+          font-weight: 500;
+        }
+        .calendar{
+          padding: 20px;
+        }
+        .calendar ul{
+          display: flex;
+          flex-wrap: wrap;
+          list-style: none;
+          text-align: center;
+        }
+        .calendar .days{
+          margin-bottom: 20px;
+        }
+        .calendar li{
+          color: #333;
+          width: calc(100% / 7);
+          font-size: 1.07rem;
+        }
+        .calendar .weeks li{
+          font-weight: 500;
+          cursor: default;
+        }
+        .calendar .days li{
+          z-index: 1;
+          cursor: pointer;
+          position: relative;
+          margin-top: 30px;
+        }
+        .days li.inactive{
+          color: #aaa;
+        }
+        .days li.active{
+          color: #fff;
+        }
+        .days li::before{
+          position: absolute;
+          content: "";
+          left: 50%;
+          top: 50%;
+          height: 40px;
+          width: 40px;
+          z-index: -1;
+          border-radius: 50%;
+          transform: translate(-50%, -50%);
+        }
+        .days li.active::before{
+          background: #9B59B6;
+        }
+        .days li:not(.active):hover::before{
+          background: #f2f2f2;
+        }
+      </code>
+    </pre>
+    <h2>5: Make the current date updated in external JS. This also formats the month to be accurately displayed with the current dates.</h2>
+    <pre>
+      <code>
+      const daysTag = document.querySelector(".days"),
+      currentDate = document.querySelector(".current-date"),
+      prevNextIcon = document.querySelectorAll(".icons span");
+      
+      // getting new date, current year and month
+      let date = new Date(),
+      currYear = date.getFullYear(),
+      currMonth = date.getMonth();
+      
+      // storing full name of all months in array
+      const months = ["January", "February", "March", "April", "May", "June", "July",
+                    "August", "September", "October", "November", "December"];
+      
+      const renderCalendar = () => {
+          let firstDayofMonth = new Date(currYear, currMonth, 1).getDay(), // first day of month
+          lastDateofMonth = new Date(currYear, currMonth + 1, 0).getDate(), // last date of month
+          lastDayofMonth = new Date(currYear, currMonth, lastDateofMonth).getDay(), //  last day of month
+          lastDateofLastMonth = new Date(currYear, currMonth, 0).getDate(); //  last date of prior month
+          let liTag = "";
+      
+          for (let i = firstDayofMonth; i > 0; i--) { // li of prior month last days
+              liTag += `&lt;li class="inactive"&gt;${lastDateofLastMonth - i + 1}&lt;/li&gt;`;
+          }
+      
+          for (let i = 1; i <= lastDateofMonth; i++) { // making li of all days of current month
+              // adding active class to li if the current day, month, and year matched
+              let isToday = i === date.getDate() && currMonth === new Date().getMonth() 
+                           && currYear === new Date().getFullYear() ? "active" : "";
+              liTag += `&lt;li class="${isToday}"&gt;${i}&lt;/li&gt;`;
+          }
+      
+          for (let i = lastDayofMonth; i < 6; i++) { // creating li of next month first days
+              liTag += `&lt;li class="inactive"&gt;${i - lastDayofMonth + 1}&lt;/li&gt;`;
+          }
+          currentDate.innerText = `${months[currMonth]} ${currYear}`; // passing current mon and yr as currentDate text
+          daysTag.innerHTML = liTag;
+      }
+      renderCalendar();
+      </code>
+    </pre>
+    <h2>6: Use external JS to make the indicator arrows dynamic and display the previous or upcoming month when interacted with.</h2>
+    <pre>
+      <code>
+          prevNextIcon.forEach(icon =&gt; { // prev and next icons
+              icon.addEventListener("click", () =&gt; { // adding click event
+                  // if clicked icon is previous icon then decrement current month by 1 else increment it by 1
+                  currMonth = icon.id === "prev" ? currMonth - 1 : currMonth + 1;
+  
+                  if(currMonth &lt; 0 || currMonth &gt; 11) { // if current month is less than 0 or greater than 11
+                      // creating a new date of current year &amp; month and pass it as date value
+                      date = new Date(currYear, currMonth, new Date().getDate());
+                      currYear = date.getFullYear(); // updating current year with new date year
+                      currMonth = date.getMonth(); // updating current month with new date month
+                  } else {
+                      date = new Date(); // pass the current date as date value
+                  }
+                  renderCalendar(); // calling renderCalendar function
+              });
+          });
+      </code>
+  </pre>  
+          <div class="wrapper">
+        <header>
+          <p class="current-date"></p>
+          <div class="icons">
+            <span id="prev" class="material-symbols-rounded">chevron_left</span>
+            <span id="next" class="material-symbols-rounded">chevron_right</span>
+          </div>
+        </header>
+        <div class="calendar">
+          <ul class="weeks">
+            <li>Sun</li>
+            <li>Mon</li>
+            <li>Tue</li>
+            <li>Wed</li>
+            <li>Thu</li>
+            <li>Fri</li>
+            <li>Sat</li>
+          </ul>
+          <ul class="days"></ul>
         </div>
-      </header>
-      <div class="calendar">
-        <ul class="weeks">
-          <li>Sun</li>
-          <li>Mon</li>
-          <li>Tue</li>
-          <li>Wed</li>
-          <li>Thu</li>
-          <li>Fri</li>
-          <li>Sat</li>
-        </ul>
-        <ul class="days"></ul>
       </div>
     </div>
-    
   </body>
 </html>

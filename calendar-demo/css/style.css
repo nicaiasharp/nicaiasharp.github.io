@@ -1,24 +1,37 @@
-/* Import Google font*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 body{
-  display: flex;
-  align-items: center;
-  padding: 0 10px;
-  justify-content: center;
-  min-height: 100vh;
   background: #9B59B6;
+}
+img {
+  width: 30%;
+  margin: 0 35%;
+}
+.container {
+  background-color: rgb(234, 234, 234);
+  width: 90%;
+  padding: 8%;
+  border-radius: 15px;
+  margin: 5%;
+}
+pre code {
+  background-color: #ffffff;
+  border: 3px solid #9B59B6;
+  display: block;
+  padding: 20px;
+  overflow: auto;
+  border-radius: 5px;
 }
 .wrapper{
   width: 450px;
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+  margin: auto;
 }
 .wrapper header{
   display: flex;
