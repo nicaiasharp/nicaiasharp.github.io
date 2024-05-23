@@ -235,9 +235,8 @@ li a:before {
               }
               .image {
                   align-self: center;
-                  width:4rem;
-                  height:4rem;
-                  margin:0.25rem 0;
+                  width:7rem;
+                  height:7rem;
                   background-size: cover;
                   background-position: center;
               }
