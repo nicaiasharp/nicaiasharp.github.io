@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.border-gradient-dotted {
+    background-image: radial-gradient(#b7f6f7, 35%, transparent 35%);
+    background-size: 8px 8px;
+    border-radius: 16px;
+    padding: 35px;
+    height: 100%;
+}
+                            
+.border-gradient-dotted .ccontent {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.55);
+    padding: 35px;
+    text-align: center;
+    margin: 4vw;
+}
+
+.border-gradient-normal {
+    background-image: linear-gradient(45deg, #b7f6f7,#ff80ea);
+    border-radius: 16px;
+    padding: 1px;
+}
+                            
+.border-gradient-normal .content {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+    padding: 35px;
+    text-align: center;
+    height: 400px;
+    width: 400px;
+    margin: auto;
+}
+.border-gradient-normal .teamcontent {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+    padding: 35px;
+    text-align: center;
+    margin: auto;
+}
+
+       
+  /*nav hamburger from https://alvarotrigo.com/blog/hamburger-menu-css/*/
+  #menu {
+    z-index: 2;
+  }
+  
+  #menu-bar {
+    width: 45px;
+    height: 40px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+  }
+  
+  .bar {
+    height: 5px;
+    width: 100%;
+    background-color: rgb(255, 98, 213);
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  
+  #bar1 {
+    transform: translateY(-4px);
+  }
+  
+  #bar3 {
+    transform: translateY(4px);
+  }
+  
+  .nav {
+    transition: 0.3s ease;
+    display: none;
+  }
+  
+  .nav ul {
+    padding: 0 22px;
+  }
+  
+  .nav li {
+    list-style: none;
+    padding: 12px 0;
+  }
+  
+  .nav li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+  }
+    
+  .menu-bg, #menu {
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+  
+  .menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 20px;
+    background: radial-gradient(circle, #fda0d8, #a1f4f7);
+    border-radius: 50%;
+    transition: 0.35s ease;
+  }
+  
+  .change {
+    display: block;
+  }
+  
+  .change .bar {
+    background-color: white;
+  }
+  
+  .change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+  }
+  
+  .change #bar2 {
+    opacity: 0;
+  }
+  
+  .change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+  }
+  
+  .change-bg {
+    width: 400px;
+    height: 400px;
+    transform: translate(-60%,-30%);
+  }
+  .animated-gradient {
+    animation: gradient 8s ease infinite;
+    background-image: linear-gradient(135deg, #b7f6f7, #58d5d7, #ff93ed, #f919d4);
+    background-size: 400% 400%;
+    border-radius: 15px;
+    padding: 1vw;
+    color: white;
+    border: 4px solid rgb(241, 91, 255);
+}
+                            
+@keyframes gradient {
+    0% {
+        background-position: 50% 0%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 50% 0%;
+    }
+}
+  .item {
+    padding: 4vw;
+  }
+  .item a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .fade-in-image:hover {
+    opacity: 100%;
+  }
+  .fade-in-image {
+    opacity: 50%;
+    transition: opacity 0.8s;
+    align-items: center;
+    width: 100%;
+  }
+  .hover-text {
+    opacity: 0;
+    transition: opacity 0.8s ease;
+    text-align: center;
+  }
+  
+  .fade-in-image:hover + .hover-text {
+    opacity: 1; 
+  }
+ 
