@@ -11,6 +11,11 @@ body {
 .section {
     padding: 4vw 0;
   }
+.socials a {
+  color: black;
+  text-decoration: none;
+  padding-right: 1vw;
+}
 /*hover transition from https://css-tricks.com/css-link-hover-effects/*/
 li a {
     text-decoration: none;
