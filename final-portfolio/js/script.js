@@ -1,5 +1,5 @@
 // function([string1, string2],target id,[color1,color2]); transition from https://www.sliderrevolution.com/resources/css-text-animation/   
-consoleText(['Nicaia Sharp.', 'Handmade Pottery', 'Made with Love<3'], 'text',['black', 'black', 'rgb(230, 59, 46)']);
+consoleText(['Nicaia Sharp.', 'Handmade Pottery.', 'Made with Love<3'], 'text',['black', 'black', 'rgb(230, 59, 46)']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
