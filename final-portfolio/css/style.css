@@ -184,6 +184,10 @@ li a:before {
   .fade-in-image:hover + .hover-text {
     opacity: 1; 
   }
+  .contact {
+    font-size: 2vw; 
+    padding-top: 10%;
+  }
 /*footer from https://enlear.academy/29-footer-examples-for-website-671ed148b969*/
   .footer {
       margin-top: 10vw;
@@ -394,14 +398,65 @@ li a:before {
 }
 /*media queries*/
 @media (max-width: 700px) {
+  body {
+    overflow-x: hidden;
+  }
 .title {
     font-size: 10vw;
-    margin-left: 20%;
+    margin-left: 10%;
     margin-top: 20%;
 }
+.hover-text {
+  opacity: 1;
+  transition: opacity 0.8s ease;
+  text-align: center;
+  font-size: 2vw;
 }
+.footer {
+  margin-top: 40vw;
+  }
+
+.logo {
+  height: 18vw;
+  width: auto;
+  float: right;
+  padding: 0 1%;
+}
+.contact {
+  font-size: 7vw;
+}
+.contact iframe {
+  width: 100%;
+}
+}
+
 @media (min-width: 621px) and (max-width: 1080px) {
-    
+  body {
+    overflow-x: hidden;
+  }
+
+  .title {
+    font-size: 10vw;
+    margin-left: 10%;
+    margin-top: 20%;
+}
+.hover-text {
+  opacity: 1;
+  transition: opacity 0.8s ease;
+  text-align: center;
+  font-size: 2vw;
+}
+.footer {
+  margin-top: 40vw;
+  overflow-x: hidden;
+  }
+
+.logo {
+  height: 18vw;
+  width: auto;
+  float: right;
+  padding: 0 1%;
+}
 }
 
 
