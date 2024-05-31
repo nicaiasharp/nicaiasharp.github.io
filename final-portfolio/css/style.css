@@ -328,13 +328,11 @@ li a:before {
 /*current works from https://codepen.io/Lubna/pen/MWapdjE*/
 .gallery img {
   max-width: 100%;
-  vertical-align: top;
 }
 
 .gallery {
   display: flex;
   margin: 10px auto;
-  max-width: 600px;
   position: relative;
   padding-top: 66.6666666667%;
 }
@@ -349,9 +347,11 @@ li a:before {
   left: 0;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
+  width: 70%;
+  margin: 0 15%;
 }
 .gallery__thumb {
-  padding-top: 6px;
+  padding-top: 50px;
   margin: 6px;
   display: block;
 }
