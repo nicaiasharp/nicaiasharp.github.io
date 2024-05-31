@@ -17,6 +17,24 @@
 
     <link rel="stylesheet" href="css/style.css">
 
+    <style>
+        form input, form textarea{
+            border: 0px;
+            margin: 10px 0;
+            padding: 20px;
+            outline: none;
+            background-color: rgba(230, 58, 46, 0.227);
+            font-size: 16px;
+        }
+        form button {
+            margin: 10px 0;
+            padding: 10px;
+            background: none;
+            outline: none;
+            border: none;
+        }
+
+    </style>
 </head>
 <body>
     <div class="logo">
@@ -71,6 +89,25 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2688.9655730645914!2d-122.17087718780918!3d47.626800471071526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906d6a37fafa6b%3A0x50a91f7b05bcc16a!2sEastside%20Pottery!5e0!3m2!1sen!2sus!4v1717003068377!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
+            <div class="row thin section contact">
+                <!--md = meant for med screens and 4 is the span - all columns need to add up to 12-->
+                <div class="col-md-6" style="text-align: left;">
+                    <form action="https://formsubmit.co/9db5bb0053d5b8d061c233ba23fb396c" method="POST">
+                        <input type="text" id="name" name="Name" placeholder="Your Name" required style="font-size: 20px;">
+                        <br>
+                        <input type="email" id="email" name="Email" placeholder="Email" required style="font-size: 20px;">
+                        <br>
+                        <textarea id="Message" rows="4" name="Message" placeholder="How can I help you?" required style="font-size: 20px;"></textarea>
+                        <br>
+                        <button class="bitalic" type="submit" style="margin: 15px 0px;">Submit</button>
+                    </form>
+                </div>
+                <div class="col-md-6" style="text-align: right; margin-top: 5%;">
+                    <h2 class="italic">Questions? Let's Find a Time to Chat.</h2>
+                    <p class="thin">Fill your name and email into the form below with a brief message.</p>
+                    <p class="thin">Thank you and I will get back to you as soon as I can. I look forward to speaking with you:)</p>
+                </div>
+
     
           </div>
           
