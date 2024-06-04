@@ -428,12 +428,19 @@ li a:before {
 .contact iframe {
   width: 100%;
 }
+.card {
+  font-size: 3vw;
+}
 }
 
 @media (min-width: 621px) and (max-width: 1080px) {
   body {
     overflow-x: hidden;
   }
+  .card {
+    font-size: 3vw;
+  }
+  
 
   .title {
     font-size: 10vw;
@@ -448,7 +455,6 @@ li a:before {
 }
 .footer {
   margin-top: 40vw;
-  overflow-x: hidden;
   }
 
 .logo {
@@ -457,6 +463,13 @@ li a:before {
   float: right;
   padding: 0 1%;
 }
+.contact {
+  font-size: 7vw;
+}
+.contact iframe {
+  width: 100%;
+}
+
 }
 
 
