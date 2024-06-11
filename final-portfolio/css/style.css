@@ -16,6 +16,9 @@ body {
   text-decoration: none;
   padding-right: 1vw;
 }
+.socials {
+  font-size: 2vw;
+}
 
 
 /*hover transition from https://css-tricks.com/css-link-hover-effects/*/
